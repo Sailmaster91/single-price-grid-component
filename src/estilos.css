@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@400;700;800&family=Roboto:ital,wght@0,300;0,500;0,700;1,700&display=swap');
+
+body {
+	font-family: Karla;
+	background-color: #e4edf4;
+	display: flex;
+	justify-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.container {
+	display: grid;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto auto;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 0;
+	color: hsl(204, 43%, 93%);
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr 1fr;
+	}
+}
